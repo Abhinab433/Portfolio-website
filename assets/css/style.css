@@ -208,3 +208,55 @@ input[type=submit]:hover {
     border:8px solid var(--color-brand);
 }
 
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .static-txt{
+    
+    font-weight:650;
+}
+.wrapper .dynamic-txt{
+ margin-left: 14px;
+ height: 90px;
+ line-height: 90px;
+ overflow:hidden;
+ 
+}
+.dynamic-txt li{
+    color: rgb(0, 255, 251);
+    list-style: none;
+    
+    font-weight:650;
+   
+    position: relative;
+    top: 0;
+    animation:slide 8s steps(4) infinite;
+
+}
+@keyframes slide{
+    100%{
+        top: -350px;
+
+    }
+}
+.dynamic-txt li span{
+    position: relative;
+}
+.dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    left:0;
+    height:100%;
+    width:100%;
+    background: #14b5b0;
+    border-left: 2px solid #cf14cc;
+    animation:typing 2s steps(20) infinite;
+
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 0 0 35px;
+
+    }
+}
