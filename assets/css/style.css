@@ -9,6 +9,8 @@
     --color-extra:#ac82bb;
     --sidbar-width: 250px;
     --font-base: "Bai Jamjuree";
+    --color-test1: #000000;
+    --color-test2: #fd0000;
 }
 body{
     background-color: var(--color-base2);
