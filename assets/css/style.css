@@ -250,7 +250,7 @@ input[type=submit]:hover {
     left:0;
     height:100%;
     width:100%;
-    background: #14b5b0;
+    background: #000000;
     border-left: 2px solid #cf14cc;
     animation:typing 2s steps(20) infinite;
 
