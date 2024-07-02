@@ -37,6 +37,7 @@ a:hover{
 }
 .pic:hover{
     zoom: 80%;
+    background-image: url('./assets/images/test.jpg');
    
 }
 .full-height{
