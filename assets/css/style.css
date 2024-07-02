@@ -212,6 +212,7 @@ input[type=submit]:hover {
 
 .wrapper{
     display: inline-flex;
+    color:var(--color-test1);
 }
 .wrapper .static-txt{
     
@@ -225,7 +226,7 @@ input[type=submit]:hover {
  
 }
 .dynamic-txt li{
-    color: rgb(0, 255, 251);
+    color:  #000000;
     list-style: none;
     
     font-weight:650;
@@ -251,7 +252,7 @@ input[type=submit]:hover {
     height:100%;
     width:100%;
     background: #000000;
-    border-left: 2px solid #cf14cc;
+    border-left: 2px solid #fd0000;
     animation:typing 2s steps(20) infinite;
 
 }
