@@ -124,7 +124,7 @@ a:hover{
 .navbar{
     min-height:100vh;
     width: var(--sidbar-width); 
-    background: linear-gradient( hsla(187, 92%, 15%, 0.7),rgba(3, 63, 71, 0.9)),url(../images/diyo.jpg);
+    background: linear-gradient(hsla(5, 89%, 45%, 0.3), rgba(1, 3, 0, 0.0)), url(../images/diyo.jpg);
     background-size: cover;
     background-position: center;
 }
