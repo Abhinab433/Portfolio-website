@@ -1,3 +1,4 @@
+/* Existing CSS */
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 :root {
     --color-body: #fd0000;
@@ -20,33 +21,28 @@ body{
 h1,h2,h3,h4,h5,h6{
     color:var(--color-heading);
     font-weight:700;
-    
-
 }
 a{
     text-decoration: none;
     color:var(--color-body);
-    transition:akk 0.4s ease;
+    transition: all 0.4s ease;
 }
 a:hover{
     color: white;
 }
 .pic{
     width:100%
-    
 }
 .pic:hover{
     zoom: 80%;
-      
 }
+
 /* Adding new hover styles */
 .hover-image {
     transition: all 0.3s ease; /* Smooth transition effect */
 }
 
-.hover-image:hover {
-    content: url('./assets/images/tesst.jpg'); /* Replace with your hover image path */
-}
+/* Removed content property as it doesn't work with img */
 .full-height{
     min-height:100vh;
     height:100%;
@@ -56,9 +52,7 @@ a:hover{
     padding-top: 80px;
     padding-bottom: 80px;
     border-bottom: 2px solid rgba(14, 160, 179, 0.9);
-
 }
-
 .text-brand{
     color:var(--color-brand);
 }
@@ -85,7 +79,6 @@ a:hover{
     color:var(--color-base2);
 }
 .social{
-   
     display:  flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +89,6 @@ a:hover{
     color:whitesmoke;
 }
 .Portfolio-social{
-   
     display:  flex;
     align-items: center;
     justify-content: center;
@@ -111,9 +103,7 @@ a:hover{
 }
 .social-link{
     display:flex;
-  
 }
-/* nav-bar */
 .navbar{
     background-color: var(--color-base);
 }
@@ -125,25 +115,21 @@ a:hover{
 .navbar .nav-link:hover{
     color: var(--color-brand);
 }
-
-
 @media(min-width:992px){
-.navbar{
-    min-height:100vh;
-    width: var(--sidbar-width); 
-    background: linear-gradient(hsla(5, 89%, 45%, 0.3), rgba(1, 3, 0, 0.0)), url(../images/diyo.jpg);
-    background-size: cover;
-    background-position: center;
+    .navbar{
+        min-height:100vh;
+        width: var(--sidbar-width); 
+        background: linear-gradient(hsla(5, 89%, 45%, 0.3), rgba(1, 3, 0, 0.0)), url(../images/diyo.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar-brand img{
+        border:8px solid var(--color-brand);
+    }
+    #content-wrapper{
+        padding-left:var(--sidbar-width);
+    }
 }
-.navbar-brand img{
-border:8px solid var(--color-brand);
-}
-/* Content wrapper */
-#content-wrapper{
-    padding-left:var(--sidbar-width);
-}
-}
-/* botton */
 .btn{
     padding:12px 28px;
     font-weight:700;
@@ -176,36 +162,27 @@ btn-brand{
 .link-custom:hover::after{
     width:100%;
 }
-
-
 input[type=text], [type=email], textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc; 
-  border-radius: 4px;
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px;
-  resize: vertical ;
-  
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical;
 }
-
-
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-
-
 input[type=submit]:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
-
-
 .mail{
     color:  rgb(24, 48, 48);
 }
@@ -217,37 +194,30 @@ input[type=submit]:hover {
     margin-right: auto;
     border:8px solid var(--color-brand);
 }
-
 .wrapper{
     display: inline-flex;
     color:var(--color-test1);
 }
 .wrapper .static-txt{
-    
     font-weight:650;
 }
 .wrapper .dynamic-txt{
- margin-left: 14px;
- height: 90px;
- line-height: 90px;
- overflow:hidden;
- 
+    margin-left: 14px;
+    height: 90px;
+    line-height: 90px;
+    overflow:hidden;
 }
 .dynamic-txt li{
     color:  aqua;
     list-style: none;
-    
     font-weight:650;
-   
     position: relative;
     top: 0;
     animation:slide 8s steps(4) infinite;
-
 }
 @keyframes slide{
     100%{
         top: -350px;
-
     }
 }
 .dynamic-txt li span{
@@ -262,12 +232,10 @@ input[type=submit]:hover {
     background: #000000;
     border-left: 2px solid #fd0000;
     animation:typing 2s steps(20) infinite;
-
 }
 @keyframes typing{
     100%{
         left: 100%;
         margin: 0 0 0 35px;
-
     }
 }
