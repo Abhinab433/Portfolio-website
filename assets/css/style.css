@@ -45,7 +45,7 @@ a:hover{
 }
 
 .hover-image:hover {
-    content: url('./assets/images/other_image.jpg'); /* Replace with your hover image path */
+    content: url('./assets/images/tesst.jpg'); /* Replace with your hover image path */
 }
 .full-height{
     min-height:100vh;
