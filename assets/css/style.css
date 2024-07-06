@@ -37,8 +37,15 @@ a:hover{
 }
 .pic:hover{
     zoom: 80%;
-    content: url('./assets/images/tesst.jpg');
-   
+      
+}
+/* Adding new hover styles */
+.hover-image {
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.hover-image:hover {
+    content: url('./assets/images/other_image.jpg'); /* Replace with your hover image path */
 }
 .full-height{
     min-height:100vh;
