@@ -10,3 +10,4 @@ AOS.init({
     imgElement.addEventListener('mouseout', () => {
         imgElement.src = './assets/images/cme.jpg'; // Original image path
     });
+
