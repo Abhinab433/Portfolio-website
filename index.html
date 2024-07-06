@@ -37,8 +37,24 @@
             </div>
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
                 <span class="h3 fw-bold d-block d-lg-none" data-aos="flip-left" data-aos-delay="50" data-aos-duration="1000">Abhinab Shrestha</span>
-                <img src="./assets/images/me.jpg" class="pic d-none d-lg-block rounded-circle hover-image" alt="" data-aos="flip-right" data-aos-delay="50" data-aos-duration="1000">
+<img id="hoverImage" src="./assets/images/me.jpg" class="pic d-none d-lg-block rounded-circle hover-image" alt="" data-aos="flip-right" data-aos-delay="50" data-aos-duration="1000">
 
+    <!-- JavaScript to handle the hover effect -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageElement = document.getElementById('hoverImage');
+
+            // Change image on hover
+            imageElement.addEventListener('mouseover', () => {
+                imageElement.src = './assets/images/tesst.jpg'; // Replace with the path to your hover image
+            });
+
+            // Revert to the original image when not hovering
+            imageElement.addEventListener('mouseout', () => {
+                imageElement.src = './assets/images/me.jpg'; // Original image path
+            });
+        });
+    </script>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
